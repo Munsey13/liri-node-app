@@ -1,0 +1,22 @@
+======Begin Spotify Log Engry======
+Artist: Eminem
+Song Name: Lose Yourself - From "8 Mile" Soundtrack
+ Preview Link: https://api.spotify.com/v1/tracks/5Z01UMMf7V1o0MzF86s6WJ
+Album Name: Curtain Call
+======End Spotify Log Entry======
+======Begin Movie Log Entry======
+Movie title: Hellboy
+Year released: 2004
+IMDB rating: 6.8
+Rotten Tomatoes rating: 81%
+Country where produced: USA
+Language: English, Russian
+Plot: A demon, raised from infancy after being conjured by and rescued from the Nazis, grows up to become a defender against the forces of darkness.
+Actors: Ron Perlman, John Hurt, Selma Blair, Rupert Evans
+======End Movie Log Entry======
+======Begin Spotify Log Engry======
+Artist: Backstreet Boys
+Song Name: I Want It That Way
+ Preview Link: https://api.spotify.com/v1/tracks/6e40mgJiCid5HRAGrbpGA6
+Album Name: The Hits--Chapter One
+======End Spotify Log Entry======
