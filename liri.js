@@ -46,6 +46,15 @@ function getSpoty(songName){
             console.log("* Song Name: " + data.tracks.items[0].name + "\r\n");
             console.log("* Song Preview Link: " + data.tracks.items[0].href + "\r\n");
             console.log("* Album: " + data.tracks.items[0].album.name + "\r\n");
+
+            let songLog = "======Begin Spotify Log Engry======" + "\nArtist: " + data.tracks.items[0].album.artists[0].name + "\nSong Name: " + data.tracks.items[0].name + "\n Preview Link: " + data.tracks.items[0].href + "\nAlbum Name: " + data.tracks.items[0].album.name + "\n======End Spotify Log Entry======" + "\n";
+
+            fs.appendFile("log.txt", songLog, function(err){
+                if (err){
+                    return err;
+                }
+            })
+
         
     });
 };
@@ -65,6 +74,15 @@ function getBandsInTown(artist){
             console.log("Name of the venue: " + response.data[0].venue.name + "\r\n");
             console.log("Venue Location: " + response.data[0].venue.city + "\r\n");
             console.log("Date of event: " + moment(response.data[0].datetime).format("MM-DD-YYYY") + "\r\n");
+
+            let concertLog = "========Begin Concert Log Entry========" + "\nName of the musician: " + artist + "\nName of the venue: " + bandResponse.data[0].venue.name + "\nVenue location: " + bandResponse.data[0].venue.city + "\n Date of event: " + moment(bandResponse.data[0].datetime).format("MM-DD-YYYY") + "\n======End Concert Log Entry======" + "\n";
+
+            fs.appendFile("log.txt", concertLog, function(err){
+                if(err){
+                    return err;
+                }
+            })
+
 
     });
 };
@@ -86,6 +104,15 @@ function getOMDB(movie){
             console.log("* Country Where Produced: " + response.data.Country + "\r\n");
             console.log("* Plot: " + response.data.Plot + "\r\n");
             console.log("* Actors: " + response.data.Actors + "\r\n");
+
+            let movieLog = "======Begin Movie Log Entry======" + "\nMovie title: " + response.data.Title + "\nYear released: " + response.data.Year + "\nIMDB rating: " + response.data.imdbRating + "\nRotten Tomatoes rating: " + response.data.Ratings[1].Value + "\nCountry where produced: " + response.data.Country + "\nLanguage: " + response.data.Language + "\nPlot: " + response.data.Plot + "\nActors: " + response.data.Actors + "\n======End Movie Log Entry======" + "\n";
+
+
+            fs.appendFile("log.txt", movieLog, function(err){
+                if(err) {
+                    return err;
+                }
+            });
         });
 };
 
@@ -101,6 +128,7 @@ function getRandom(){
         };
     });
 };
+
 
 liriStart(userCommand, userSearch);
 
