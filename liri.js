@@ -56,10 +56,11 @@ function getBandsInTown(artist){
         artist = "Joe Hisaishi";
     };
     
-    let bandURL = "https://rest.bandsintown.com/artist/" + artist + "/events?app_id=codingbootcamp";
+    let bandURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
 
     axios.get(bandURL).then(
         function(response){
+            console.log(response);
             console.log("=============");
             console.log("Name of the venue: " + response.data[0].venue.name + "\r\n");
             console.log("Venue Location: " + response.data[0].venue.city + "\r\n");
