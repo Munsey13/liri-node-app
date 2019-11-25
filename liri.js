@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 const keys = require("./keys.js");
-const spotify = require("node-spotify-api");
+const Spotify = require("node-spotify-api");
 const axios = require("axios");
 const fs= require("fs");
 const moment = require("moment");
@@ -16,7 +16,7 @@ function liriStart(userCommand, userSearch) {
         case "concert-this":
             getBandsInTown(userSearch);
             break;
-        case "moive-this":
+        case "movie-this":
             getOMDB(userSearch);
             break;
         case "do-what-it-says":
