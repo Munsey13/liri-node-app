@@ -16,4 +16,5 @@ OMDB searches for the movie and returns information on it.
 commad: do-what-it-says
 Spotify will search for what is in random.txt file then then search displays relevant information for the searched item and is added to the searches.txt file.
 
-
+## Images
+- ![Screenshot 1](images\Screenshot(2).png)
