@@ -18,3 +18,7 @@ Spotify will search for what is in random.txt file then then search displays rel
 
 ## Images
 - ![Screenshot 1](images/Screenshot(2).png)
+- ![Screenshot 2](images/Screenshot(3).png)
+- ![Screenshot 3](images/Screenshot(4).png)
+- ![Screenshot 4](images/Screenshot(5).png)
+- ![Screenshot 5](images/Screenshot(6).png)
